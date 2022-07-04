@@ -10,8 +10,8 @@ const ObjectId =  require('mongodb').ObjectId;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "../to-do-list-client/build")));
-// app.use(express.static(path.join(__dirname, ".." ,'to-do-list-client', 'build')));
+// app.use(express.static(path.join(__dirname, "../to-do-list-client/build")));
+app.use(express.static(path.join(__dirname,'client', 'build')));
 
 //MongoDb requirements
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@clusterdb.rpg0k.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
