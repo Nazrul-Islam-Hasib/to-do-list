@@ -45,7 +45,7 @@ const ToDo = () => {
 
                 </div>
                 <div className="row mt-5">
-                    <h2 className='text-success fw-bold'>Completed Task</h2>
+                    <h2 className='text-success fw-bold'>Completed Tasks</h2>
                     <table className="table table-bordered">
                         <thead className='table-dark'>
                             <tr>
